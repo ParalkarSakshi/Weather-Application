@@ -1,0 +1,60 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-55deg, #a0f4f7 , #e45b31, #f5e72c,rgb(92, 250, 92));
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+#container{
+    content: '';
+    height: 400px;
+    width: 700px;
+    text-align: center;
+    background-image: url('img/weather.jpg');
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    animation: Gradient 10s ease-in-out infinite;
+    margin-top: 150px;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 50px 5px rgb(29, 209, 233) inset;
+}
+
+#weather-btn {
+    cursor: pointer;
+    border: 2px solid  rgb(0, 0, 0);
+}
+
+#weather-btn:hover{
+    background : linear-gradient(#e76813,#ffff00);
+    color: white;
+} 
+
+#temperature, #name {
+    font-weight: bold;
+}
+
+#inputCity, #weather-btn {
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+}
